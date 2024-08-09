@@ -7,7 +7,7 @@ const addCards = (items) => {
                         '<img src="'+item.path+'" alt="Cute Puppy" height="400px">'+
                     '</div>'+
                     '<div class="card-content">'+
-                        '<p>Dogs are known for their loyalty and companionship. They come in various breeds, sizes, and colors. Dogs are often referred to as mans best friend due to their friendly and protective nature.</p>'+
+                        '<p>'+item.description+'</p>'+
                     '</div>'+
                     '<div class="card-action">'+
                         '<a href="https://en.wikipedia.org/wiki/Dog" target="_blank">Learn more about dogs</a>'+
