@@ -50,6 +50,11 @@ function getAllCats() {
     });
 }
 
+let socket = io();
+socket.on('number', (data) => {
+    console.log(`User ID: ${data.id}, Random Number: ${data.number}`);
+});
+
 $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('#formSubmit').click(()=>{
@@ -58,3 +63,4 @@ $(document).ready(function(){
     $('.modal').modal();
     getAllCats();
 });
+
